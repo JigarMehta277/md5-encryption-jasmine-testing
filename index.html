@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jasmineTesting/lib/md5.js"></script>
+    <script src="script1.js"></script>
+    <title>MD5</title>
+</head>
+
+<body>
+    <form method="post" class="login" id="login__form">
+        <fieldset class="login__fieldset">
+            <legend>User Authentication</legend>
+            <div>
+                <label for="login__user__name" class="login__label">
+                    Username:
+                </label>
+                <input type="text" name="login__user__name" class="login__txt" id="login__user__name" />
+            </div>
+            <div>
+                <label for="login__passwords" class="login__label">
+                    Password:
+                </label>
+                <input type="password" name="login__passwords" class="login__txt" id="login__passwords" />
+            </div>
+            <input type="submit" value="Submit" class="login__button">
+        </fieldset>
+    </form>
+    <div class="output" id="output">
+        <p>username:<span class="output__text" id="output__username"></span></p>
+        <p>Password:<span class="output__text" id="output__password"></span></p>
+    </div>
+</body>
+
+</html>
